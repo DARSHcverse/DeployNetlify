@@ -1,4 +1,4 @@
- import React,{useState} from 'react'
+import React,{useState} from 'react'
 import INPUT from './input'
 import { Link } from 'react-router-dom'
 import { createUserDocFromAuth, signinAuthUserWithEmailAndPassword } from './utils/firebase'
@@ -39,8 +39,6 @@ const Login = (props)=>{
 
         }
     }
-
-
  
     return <div className= 'header-div2'>
 
@@ -69,8 +67,11 @@ const Login = (props)=>{
        <br></br>
        
        <button onClick={handleSubmit} className= 'logBtn'>
-        <Link to='/' style={{ textDecoration: 'none'}}>Sign in</Link>
+        <Link to='home' style={{ textDecoration: 'none'}} id='SIGNIN'>Sign in</Link>
        </button>
+
+       
+    
 
        <div className='SNUPinstead'>
         <button className='SNbtn'><Link to="/signup" style={{ textDecoration: 'none'}}> Sign Up </Link></button>

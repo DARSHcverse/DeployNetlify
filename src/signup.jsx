@@ -109,7 +109,7 @@ const SignUp = (props)=>{
        <br></br>
 
        <button onClick={handleSubmit} className= 'signBTN'>
-        <Link to='/login'  style={{ textDecoration: 'none'}} >Create</Link>
+        <Link to='/'  style={{ textDecoration: 'none'}} >Create</Link>
        </button>
 
        <br />
