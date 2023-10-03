@@ -1,0 +1,120 @@
+body{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.navbar_background{
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  align-items: center;
+  background-color:lightgray;
+  padding: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+}
+
+.right, .left {
+  display: flex;
+  align-items: center;
+}
+
+.left .nav-list,.right .nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.left .nav-list li,.right .nav-list li {
+  padding: 0 18px;
+}
+
+.left .nav-list li a,.right .nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.left .nav-list li a:hover,.right .nav-list li a:hover {
+  color: blue;
+}
+input{
+  width: 410px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-div{
+  margin-left: 45%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.header-div2{
+  margin-left: 45%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+h3{
+  color: #009999;
+  margin-left: 9%;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-div h6{
+  margin-bottom: 5px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.signBTN{
+  display: block;
+  background-color: #009999;
+  border-radius: 10px;
+  margin-left:0.5%;
+  width: 410px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logBtn{
+  display: block;
+  background-color: #009999;
+  margin-left:0%;
+  border-radius: 10px;
+  width: 410px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.SNUPinstead{
+  margin-left: 22%;
+  margin-top: -30%;
+  border: 2px solid #009999;
+  border-radius: 10px;
+  /* border-color: #009999; */
+}
+.SNbtn{
+  display: block;
+  background-color: white;
+  margin-left:0.5%;
+  border-radius: 10px;
+  width: 110px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
