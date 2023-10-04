@@ -239,7 +239,7 @@ function Job({ SelectedJobType }) {
         <br />
         <button className="Upl">Browse</button>
         <div className="BTN3">
-          <button onClick={handleSubmit}>
+          <button onClick={handleSubmit} className="btn3">
             <Link to='/dev'  style={{ textDecoration: 'none'}} >Post</Link>
           </button>
         </div>

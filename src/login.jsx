@@ -71,8 +71,6 @@ const Login = (props)=>{
        </button>
 
        
-    
-
        <div className='SNUPinstead'>
         <button className='SNbtn'><Link to="/signup" style={{ textDecoration: 'none'}}> Sign Up </Link></button>
        </div>
