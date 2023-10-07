@@ -361,14 +361,14 @@ button{
     overflow: hidden;
     border-radius: 15px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 7%;
     margin-bottom: 20px;
 }
 
 .job-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .payment-form {
@@ -413,4 +413,17 @@ button{
     width: 12%;
     margin-left: 75%;
     margin-top: -4.3%;
+  }
+  .search-bar{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+
+  }
+  .search{
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
   }

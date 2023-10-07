@@ -10,12 +10,6 @@ function CardExampleCard({ jobData }) {
           <Card.Header>{jobData.Title}</Card.Header><br />
           <Card.Description>{jobData.JobDescription}</Card.Description>
         </Card.Content>
-        {/* <Card.Content extra>
-          <a>
-            <Icon name='user' />
-            22 Friends
-          </a>
-        </Card.Content> */}
       </Card>
     </div>
   );

@@ -4,6 +4,7 @@ import CardExampleCard from '../CardExampleCard';
 
 function JobList() {
   const [jobData, setJobData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,12 +15,24 @@ function JobList() {
     fetchData();
   }, []);
 
+  const filteredJobs = jobData.filter((job) =>
+    job.Title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
-    <div className="job-container">
-      {jobData.map((job, index) => (
-        <CardExampleCard key={index} jobData={job} />
-      ))}
-    </div>
+    <><div className="search-bar">
+      <input
+        type="text"
+        placeholder="Search by job title"
+        className='search'
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)} />
+    </div><div className="job-container">
+
+        {filteredJobs.map((job, index) => (
+          <CardExampleCard key={index} jobData={job} />
+        ))}
+      </div></>
   );
 }
 
