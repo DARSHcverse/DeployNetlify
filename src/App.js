@@ -9,12 +9,15 @@ import JobList from "./routes/joblist";
 import PaymentForm from "./routes/payment";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import Chat from "./chatgpt";
+import Chat2 from "./chtgptIMP";
 
 function App(){
     const stripePromise = loadStripe('pk_test_51NxOlOLmGcseIlWj5DuA1epwhCqOs75tSzbu41Msj7nxZ45XgAhwX1LHIssSkT92mSoEOnPaOKLGXmtt3DOranfs00mT8Zcw1Y');
     return(
     <Router>
       <NavBar/>
+      <Chat2/>
       <Routes>
         <Route path='home' element={<Home />}/>
         <Route path='/' element={<LOGIN/>}/>
@@ -26,6 +29,7 @@ function App(){
             <PaymentForm />
           </Elements>
         } />
+        <Route path='cht' element={<Chat/>}/>
       </Routes>
     </Router>
     )
